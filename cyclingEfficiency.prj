@@ -1,32 +1,42 @@
-<deployment-project plugin="plugin.webdeploy" plugin-version="1.0">
-  <configuration file="/Users/rosswilkinson/Google Drive/projects/shiny-cycling-efficiency/cyclingEfficiency.prj" location="/Users/rosswilkinson/Google Drive/projects/shiny-cycling-efficiency" name="cyclingEfficiency" target="target.webdeploy" target-name="Web App Compiler">
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="701761629" file="/Users/rosswilkinson/Google Drive/projects/shiny-cycling-efficiency/cyclingEfficiency.prj" location="/Users/rosswilkinson/Google Drive/projects/shiny-cycling-efficiency" name="cyclingEfficiency" target="target.mlapps" target-name="Package App">
     <param.appname>cyclingEfficiency</param.appname>
-    <param.intermediate>${PROJECT_ROOT}/cyclingEfficiency</param.intermediate>
-    <param.files.only>${PROJECT_ROOT}/cyclingEfficiency</param.files.only>
-    <param.output />
-    <param.checkbox>false</param.checkbox>
-    <param.logdir>${PROJECT_ROOT}/cyclingEfficiency</param.logdir>
-    <param.target.type>subtarget.web.app</param.target.type>
-    <param.user.defined.mcr.options />
-    <param.support.packages />
+    <param.authnamewatermark>Ross Wilkinson</param.authnamewatermark>
+    <param.email>ross.wilkinson@colorado.edu</param.email>
+    <param.company>University of Colorado Boulder</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary>Allows users to translate metabolic efficiency to cycling performance.</param.summary>
+    <param.description>How do differences in metabolic efficiency translate to cycling performance? This app allows the user to investigate the effect of metabolic efficiency on either metabolic power or mechanical power and subsequent ground velocity. The user can also investigate how different sources of resistance to forward motion effect the relationship between mechanical power and ground velocity. Finally, the differences in ground velocity are converted to the time to travel 1 km to show the potential time savings.</param.description>
+    <param.screenshot />
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>6fb5b5e6-53ec-4c43-9d72-28057c3d3c3c</param.guid>
     <unset>
-      <param.intermediate />
-      <param.files.only />
+      <param.icon />
+      <param.icons />
+      <param.screenshot />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
       <param.output />
-      <param.checkbox />
-      <param.logdir />
-      <param.target.type />
-      <param.user.defined.mcr.options />
-      <param.support.packages />
     </unset>
-    <fileset.web.main>
+    <fileset.main>
       <file>${PROJECT_ROOT}/cyclingEfficiency.mlapp</file>
-    </fileset.web.main>
-    <fileset.resources />
+    </fileset.main>
     <fileset.depfun />
+    <fileset.resources>
+      <file>${PROJECT_ROOT}/totalCyclingPower.m</file>
+    </fileset.resources>
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}/cyclingEfficiency" name="cyclingEfficiency.ctf" optional="false">/Users/rosswilkinson/Google Drive/projects/shiny-cycling-efficiency/cyclingEfficiency/cyclingEfficiency.ctf</file>
+      <file location="/Users/rosswilkinson/Google Drive/projects" name="shiny-cycling-efficiency" optional="false">/Users/rosswilkinson/Google Drive/projects/shiny-cycling-efficiency</file>
     </build-deliverables>
     <workflow />
     <matlab>
