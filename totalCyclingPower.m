@@ -13,7 +13,7 @@
 % a = Angle of riding surface (%)
 % mu = Coefficient of friction
 
-function P_TOT = totalCyclingPower(V_w, V_g, p, CdA, D_w, D_b, F_w, g, M_r, M_b, a, mu)
+function [P_TOT, P_AT, P_RR, P_WB, P_PE, P_NET] = totalCyclingPower(V_w, V_g, p, CdA, D_w, D_b, F_w, g, M_r, M_b, a, mu)
 
 P_AT = aerodynamicPower(V_w,V_g,p,CdA,D_w,D_b,F_w);
 
